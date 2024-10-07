@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(170, 160, 173);
+        }
+        #d1{
+            display:grid;
+            
+        }
+        .item{
+            height: 300px;
+            width:300px;
+            margin:80px;
+        }
+        .i4{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .i1{
+            transform: translate(80px,40px);
+        }
+        .i2{
+            transform:scale(1.5);
+        }
+        .i3{
+            transform: rotate(45deg);
+        }
+        .i4{
+            transform: rotate(-45deg);
+        }
+        .i5{
+            transform:skewX(30deg) ;
+            box-shadow: 20px 20px 10px rgb(177, 213, 218);
+           
+        }
+        .i6{
+            transform: skewY(60deg);
+            box-shadow:20px 20px 10px rgb(22, 63, 49) ;
+        }
+        #d2{
+            display: grid;
+        }
+        .i10{
+            grid-row-start: 1;
+            grid-row-end:2;
+            grid-column-start:2;
+            grid-column-end: 3;
+        }
+        .i7{
+            transform: translate3d(100px,100px,100px);
+        }
+        .i8{
+            transform:scale3d(2,1,1.5);
+        }
+        .i9{
+            transform:rotatez(50deg);
+        }
+        .i10{
+            transform:perspective(200px) rotateX(50deg);
+            box-shadow: 20px 10px 10px purple;
+        }
+        .i11{
+            transform:perspective(300px) skewx(30deg);
+            box-shadow:20px 10px 10px rgb(160, 73, 14);
+        }
+        .i12{
+            transform:perspective(300px) rotate3d(1,2,3,50deg);
+            box-shadow:20px 10px 10px rgb(14, 160, 94);
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h2>2D Transform</h2>
+        <div id="d1">
+        <img src="./flower1.jpeg" class="item i1">
+        <img src="./flower2.jpeg" class="item i2">
+        <img src="./flower3.jpeg" class="item i3">
+        <img src="./flower4.jpeg" class="item i4">
+        <img src="./flower5.jpeg" class="item i5">
+        <img src="./flower5.jpeg" class="item i6">
+        </div>
+        <h2>3D Transform</h2>
+        <div id="d2">
+            <img src="./waterfall1.jpeg" class="item i7">
+            <img src="./waterfall2.jpeg" class="item i8">
+            <img src="./nature1.jpeg" class="item i9">
+            <img src="./nature2.jpeg" class="item i10">
+            <img src="./nature3.jpeg" class="item i11">
+            <img src="./nature4.jpeg" class="item i12">
+
+        </div>
+</body>
+</html>
